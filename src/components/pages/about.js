@@ -12,7 +12,7 @@ export default function About() {
             </div>
 
             <div className="about-paragraph">
-                <h1>Welcome to Kirbys Monsters, after having a stroke and surviving i figured out i could scuplt clay. what you are seeing on this page are my monsters.</h1>
+                <h1>Welcome to Kirbys Monsters, after having a stroke i figured out i could scuplt clay. what you are seeing on this page are my monsters.</h1>
             </div>
         </div>
     )
