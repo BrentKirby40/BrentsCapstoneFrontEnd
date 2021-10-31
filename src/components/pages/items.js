@@ -12,8 +12,7 @@ export default class Items extends Component {
     }
 
     componentDidMount() {
-        fetch("https://capstone-example-backend.herokuapp.com/item/get")
-        
+        fetch("http://127.0.0.1:5000/item/get")
         .then(response => response.json())
         .then(data => {
             this.setState({

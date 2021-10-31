@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom"
 import axios from 'axios';
 
+
 import Nav from "./nav";
 import Home from "./pages/home";
 import Items from "./pages/items";
 import AddItem from "./pages/add-item";
 import About from "./pages/about";
-import NoMatch from "./pages/no-match";
 
 export default class App extends Component {
 constructor() {
@@ -37,7 +37,7 @@ constructor() {
           <Route path="/items" component={Items} />
           <Route path="/add-item" component={AddItem} />
           <Route path="/about" Component={About} />
-          <Route Component={NoMatch} />
+     
         </Switch>
       </div>
     );

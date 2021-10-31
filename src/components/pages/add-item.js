@@ -6,7 +6,7 @@ export default class AddItem extends Component {
         super(props)
 
         this.state = {
-            nameInput: "",
+            toyInput: "",
             priceInput: "",
             loading: false,
             error: false
@@ -28,11 +28,11 @@ export default class AddItem extends Component {
             error: false
         })
 
-        fetch"https://brents-capstone.herokuapp.com", {
+        fetch("http://127.0.0.1:5000/item/add", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({
-                toy: this.state.toyInput,
+                name: this.state.toyInput,
                 price: parseFloat(this.state.priceInput)
             })
         })
@@ -62,7 +62,7 @@ export default class AddItem extends Component {
                         type="text" 
                         placeholder="toy"
                         name="toyInput" 
-                        value={this.state.nameInput}
+                        value={this.state.toyInput}
                         onChange={this.handleChange}
                     />
 
