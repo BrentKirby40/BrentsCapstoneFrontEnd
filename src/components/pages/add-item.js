@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import axios from 'axios';
+
 
 export default class AddItem extends Component {
     constructor(props) {
@@ -28,7 +28,7 @@ export default class AddItem extends Component {
             error: false
         })
 
-        fetch("http://127.0.0.1:5000/item/add", {
+        fetch("https://brents-capstone-back-end.herokuapp.com/add", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({
